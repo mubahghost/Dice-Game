@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@color/pink">
+
+  <TextView
+      android:id="@+id/PopupID"
+      android:layout_width="194dp"
+      android:layout_height="wrap_content"
+      android:layout_centerHorizontal="true"
+      android:layout_marginStart="18dp"
+      android:layout_marginTop="18dp"
+      android:layout_marginEnd="18dp"
+      android:layout_marginBottom="18dp"
+      android:text="Mubashar Khan -- w1814299"
+      android:textSize="26sp"
+      android:textColor="@color/black"/>
+
+  <TextView
+      android:id="@+id/information"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/PopupID"
+      android:layout_centerHorizontal="true"
+      android:layout_marginLeft="22dp"
+      android:layout_marginTop="16dp"
+      android:layout_marginRight="22dp"
+      android:gravity="center"
+      android:text="I confirm that I understand what plagiarism is and have read and understood the section on Assessment Offences in the Essential Information for Students. The work that I have submitted isentirely my own. Any work from other authors is duly referenced and acknowledged."
+      android:textSize="15sp"
+      android:textColor="@color/black"/>
+</RelativeLayout>

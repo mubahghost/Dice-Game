@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundcolorDicegame"
+    tools:context=".DiceGame">
+
+    <TextView
+        android:id="@+id/Welcometext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to dicegame"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.527"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.022" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Player"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.189"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.204" />
+
+    <TextView
+        android:id="@+id/resultplayer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Player Score: "
+        android:textColor="@color/textColor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.953"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.022" />
+
+    <TextView
+        android:id="@+id/resultComp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Computer Score: "
+        android:textColor="@color/textColor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.97"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/resultplayer"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="357dp"
+        android:layout_height="157dp"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TableRow
+            android:layout_width="304dp"
+            android:layout_height="111dp">
+
+            <ImageView
+                android:id="@+id/dice1c"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/dice1c" />
+
+            <ImageView
+                android:id="@+id/dice2c"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/dice2c" />
+
+            <ImageView
+                android:id="@+id/dice3c"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/dice3c" />
+
+            <ImageView
+                android:id="@+id/dice4c"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/dice4c" />
+
+            <ImageView
+                android:id="@+id/dice5c"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/dice5c" />
+
+        </TableRow>
+    </TableLayout>
+
+    <TableLayout
+        android:id="@+id/tableLayout2"
+        android:layout_width="374dp"
+        android:layout_height="156dp"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.551"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.712">
+
+        <TableRow
+            android:layout_width="408dp"
+            android:layout_height="175dp">
+
+            <ImageView
+                android:id="@+id/dice1"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/dice1" />
+
+            <ImageView
+                android:id="@+id/dice2"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/dice2" />
+
+            <ImageView
+                android:id="@+id/dice3"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/dice3" />
+
+            <ImageView
+                android:id="@+id/dice4"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/dice4" />
+
+            <ImageView
+                android:id="@+id/dice5"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/dice5" />
+
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:id="@+id/RollButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Throw"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.975"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.716" />
+
+    <Button
+        android:id="@+id/ScoreButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Score"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.975"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.531" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="144dp"
+        android:layout_height="129dp"
+        android:layout_marginBottom="140dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/background_image" />
+
+    <Button
+        android:id="@+id/Reroll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reroll"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.975"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.892" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="69dp"
+        android:layout_height="32dp"
+        android:text="Computer"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.169"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.77" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
